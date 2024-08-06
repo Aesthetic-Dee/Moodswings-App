@@ -1,8 +1,11 @@
 import React, { useState, useEffect } from 'react';
 
 function ProgressBar({ audioRef }) {
+
+  // USESTATE FOR PROGRESS BAR
   const [progress, setProgress] = useState(0);
 
+  // USE EFFECT FOR PROGRESS BAR CONTROL
   useEffect(() => {
     const audio = audioRef.current;
     const updateProgress = () => {
@@ -12,12 +15,17 @@ function ProgressBar({ audioRef }) {
       setProgress(progressPercent);
     };
 
+    // EVENT LISTENER FOR AUDIO
     audio.addEventListener('timeupdate', updateProgress);
     return () => audio.removeEventListener('timeupdate', updateProgress);
   }, [audioRef]);
 
   return (
+
+    // PROGRESS BAR COMPONENT
     <div className="w-full h-[6px] bg-[#ccc] rounded-[15px] mt-4 mb-2">
+
+      {/* PROGRESS BAR */}
       <div 
         className="h-full bg-amber-500 rounded-[inherit] relative cursor-pointer"
         style={{ width: `${progress}%` }}

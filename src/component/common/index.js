@@ -1,5 +1,5 @@
 import Header from './body/Header';
-import IntroText from './body/introText';
+import IntroText from './body/IAmYourMood';
 import Welcome from './body/WelcomeVideo';
 import PlayerSection from './body/MusicPlayer/MusicPlayer';
 import Bio from './body/Bio-section';

@@ -2,6 +2,7 @@ import React from 'react';
 
 function TopBar() {
   return (
+    // TOP BAR COMPONENT
     <div className="flex items-center justify-between text-lg">
       <span className="material-symbols-rounded text-2xl cursor-pointer">
         <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="size-6">

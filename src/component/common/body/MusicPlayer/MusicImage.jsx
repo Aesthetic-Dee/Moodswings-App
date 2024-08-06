@@ -2,6 +2,8 @@ import React from 'react';
 
 function MusicImage({ img }) {
   return (
+
+    // MUSIC IMAGE COMPONENT
     <div className="flex justify-center mt-6">
       <div className="w-[230px] h-[230px] rounded-full">
         <img 
