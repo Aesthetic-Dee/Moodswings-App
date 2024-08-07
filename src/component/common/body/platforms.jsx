@@ -26,7 +26,7 @@ function socials() {
 
           {/* CONATINER */}
           <div className='w-4/5 grid gap-5 grid-cols-5 sm:grid-cols-3 items-center place-items-center'>
-          <a href="https://www.deezer.com/en/track/2172232347?deferredFl=1" className='text-center font-anton text-2xl'><img src={Deezer} alt="Deezer logo - link" className='w-56'/> Deezer </a>
+            <a href="https://www.deezer.com/en/track/2172232347?deferredFl=1" className='text-center font-anton text-2xl'><img src={Deezer} alt="Deezer logo - link" className='w-56'/>Deezer</a>
             <a href="https://open.spotify.com/track/5HcZhem8UgIjURtUZJiUx9?si=VJIz-U1VQ-26a-2MtkUT0A&dd=1&nd=1&utm_medium=organic&product=open&%24full_url=https%3A%2F%2Fopen.spotify.com%2Ftrack%2F5HcZhem8UgIjURtUZJiUx9%3Fsi%3DVJIz-U1VQ-26a-2MtkUT0A%26dd%3D1&feature=organic&_branch_match_id=1044940236946677565&_branch_referrer=H4sIAAAAAAAAA72N0QqCMBiFn2bdqTlLKpAIQlLoomheeBNrTl1ON%2BY%2FqJ6%2BWfQKwYH%2F8B%2FO%2BVoAPW6CYNQKRP30qda%2BFEMXbLVRlWWQKM2HGcKL2kp5tUYm7VRB0Q7h1GmK%2FV%2Bbqd69wFDWubs8sLLl%2FYo02Z2cgZS5II81itJRoGhf5NnLI2Fx8nBMPXyEjlzmbjSuKpeGHySV8ua2%2Foh1Zvjya07BGp4o09BBsDcG7GlxKQEAAA%3D%3D" className='text-center font-anton text-2xl'><img src={Spotify} alt="Spotify logo - link" className='w-80'/>Spotify</a>
             <a href="https://music.amazon.com/albums/B0BX7DXN48?trackAsin=B0BX7FD4JT&do=play&ref=dm_ff_featurefm&tag=featurefm-20" className='text-center font-anton text-2xl'><img src={Amazonmusic} alt="Amazon logo - link" className='w-56'/>Amazon Music</a>
             <a href="https://music.apple.com/es/album/attention/1675146542?i=1675146543" className='text-center font-anton text-2xl'><img src={Applemusic} alt="Apple logo - link" className='w-56'/>Apple Music</a>
