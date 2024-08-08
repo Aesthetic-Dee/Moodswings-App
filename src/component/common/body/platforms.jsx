@@ -16,7 +16,7 @@ function socials() {
     // PLATFORM SECTION
     <section className='text-white mt-24'>
         
-        {/* TITLE */}
+        {/* PARAGRAPH */}
         <div className='flex justify-center'>
           <p className='text-center font-anton text-3xl text-orange-500 sm:mb-5'>Join me on my journey</p>
         </div>
