@@ -99,54 +99,55 @@ function MusicPlayer() {
 
   return (
 
-    // MUSIC PLAYER SECTION
-    <div className="flex items-center justify-around mt-24 sm:mt-10 mb-24 sm:mb-10">
-      
-      {/* INTERNAL STYLING FOR ROTATING DISK IMAGE */}
-      <style>
-        {`
-        .rotate{
-          animation: rotation 8s infinite linear;
-        }
-
-        @keyframes rotation {
-          from {
-            transform: rotate(0deg);
+    <div className="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8 py-12 sm:py-5 lg:py-24">
+      <div className="flex flex-col lg:flex-row items-center justify-between gap-8">
+        
+        {/* INTERNAL STYLING FOR ROTATING DISK IMAGE */}
+        <style>
+          {`
+          .rotate {
+            animation: rotation 8s infinite linear;
           }
-          to {
-            transform: rotate(360deg);
-          }
-        }
-        `}
-      </style>
 
-      {/* ROTATING DISK IMAGE */}
-      <img src={GoodTimeLogo} alt="Good Time Cover Image" className='sm:hidden rotate rounded-full w-2/5' />
-      
-      {/* MUSIC PLAYER COMPONENTS CONTAINER */}
-      <div className="text-white w-[350px] rounded-[15px] p-[25px_30px] border-4 border-gray-500">
-        <TopBar /> 
-        <MusicImage img={currentSong.img} />
-        <MusicInfo name={currentSong.name} artist={currentSong.artist} />
-        <ProgressBar audioRef={audioRef} />
-        <Controls 
-          isPlaying={isPlaying}
-          onPlayPause={playPauseHandler}
-          onNext={nextSongHandler}
-          onPrev={prevSongHandler}
-          onShuffle={shuffleHandler}
-          onRepeat={repeatHandler}
-          isShuffled={isShuffled}
-          isRepeating={isRepeating}
+          @keyframes rotation {
+            from {
+              transform: rotate(0deg);
+            }
+            to {
+              transform: rotate(360deg);
+            }
+          }
+          `}
+        </style>
+
+        {/* ROTATING DISK IMAGE */}
+        <img 
+          src={GoodTimeLogo} 
+          alt="Good Time Cover Image" 
+          className='sm:hidden rotate rounded-full w-2/5 max-w-md'
         />
-        <audio 
-          ref={audioRef}
-          src={currentSong.audio}
-          onEnded={endSongHandler}
-        />
+        
+        {/* MUSIC PLAYER COMPONENTS CONTAINER */}
+        <div className="text-white w-96 sm:max-w-sm md:max-w-md lg:max-w-lg xl:max-w-xl mx-auto lg:mx-0 rounded-2xl p-4 sm:p-6 md:p-8 border-2 sm:border-4 border-gray-500 shadow-lg">
+          <TopBar /> 
+          <MusicImage img={currentSong.img} />
+          <MusicInfo name={currentSong.name} artist={currentSong.artist} />
+          <ProgressBar audioRef={audioRef} />
+          <Controls 
+            isPlaying={isPlaying}
+            onPlayPause={playPauseHandler}
+            onNext={nextSongHandler}
+            onPrev={prevSongHandler}
+            onShuffle={shuffleHandler}
+            onRepeat={repeatHandler}
+            isShuffled={isShuffled}
+            isRepeating={isRepeating}
+          />
+          <audio ref={audioRef} src={currentSong.audio} onEnded={endSongHandler} />
+        </div>
+        {/* MUSIC PLAYER END */}
+
       </div>
-      {/* MUSIC PLAYER END */}
-
     </div>
   );
 }
